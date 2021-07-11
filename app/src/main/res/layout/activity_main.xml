@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="@string/high_score"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_have_to_fly"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/play"
+        android:layout_below="@id/high_score"/>
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:textSize="64sp"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/volume_control"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_volume_up_24"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/instructions"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+        android:textSize="34sp"
+        android:layout_margin="16sp"/>
+
+</RelativeLayout>
